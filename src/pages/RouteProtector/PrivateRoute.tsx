@@ -9,7 +9,7 @@ const PrivateRoute = ({ component: Component }: GuestRouteProps) => {
   const navigate = useNavigate();
 
   const verify = async () => {
-    const response = await instance.get(URLS.administratorVerify);
+    const response = await instance.get(URLS.verify);
     if (response.data.success) {
       console.log("verified");
     } else {
